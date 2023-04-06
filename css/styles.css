@@ -1,0 +1,66 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #D0E9C6;
+    font-family: 'Montserrat', sans-serif;
+}
+
+header {
+    height: 4rem;
+    background-color: #4CAF50;
+}
+
+header nav {
+    padding: 0 1rem;
+    background-color: #4CAF50;
+}
+
+header nav h1 {
+    font-size: 1.2rem;
+    color: #9BED9F;
+}
+
+main .container__hero {
+    min-height: 20rem;
+    background-image: linear-gradient(rgba(5, 7, 12, .75), rgba(5, 7, 12, .75)),
+        url("../img/header.jpg");
+    background-size: cover;
+}
+
+main .container__hero .hero .hero__title {
+    width: 70%;
+    padding: 1rem;
+    font-size: 1rem;
+    color: #A6FFA9;
+}
+
+@media (min-width:767px) {
+    header nav {
+        padding: 0 2rem;
+        background-color: #4CAF50;
+    }
+
+    main .container__hero .hero .hero__title {
+        font-size: 1.3rem;
+        padding: 1.5rem 0;
+    }
+}
+
+@media (min-width:990px) {
+    main .container__hero {
+        height: 28rem;
+        background-attachment: fixed;
+        background-position: bottom;
+        background-repeat: no-repeat;
+    }
+
+    main .container__hero .hero .hero__title {
+        padding: 1.8rem 0;
+    }
+}
