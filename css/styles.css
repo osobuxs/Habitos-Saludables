@@ -21,9 +21,10 @@ header nav {
     background-color: #4CAF50;
 }
 
-header nav h1 {
+header nav a {
     font-size: 1.2rem;
     color: #9BED9F;
+    text-decoration: none;
 }
 
 main .container__hero {
@@ -33,12 +34,51 @@ main .container__hero {
     background-size: cover;
 }
 
+
+
 main .container__hero .hero .hero__title {
     width: 70%;
-    padding: 1rem;
+    padding: 1.1rem;
     font-size: 1rem;
     color: #A6FFA9;
 }
+
+main section .container__products {
+    margin-top: 2rem;
+}
+
+main section .container__products .products__title {
+    font-weight: bold;
+    color: #333333;
+}
+
+
+main section .container__products .search {
+    margin-top: 1rem;
+    width: 10rem;
+    border-bottom: 3px solid #9BED9F;
+    padding-bottom: 0.2rem;
+}
+
+
+main section .container__products .search input {
+    width: 100%;
+    background-color: transparent;
+    border: 0;
+    outline: none;
+    font-size: 0.8rem;
+}
+
+main section .container__products {
+    margin-bottom: 200rem;
+}
+
+main section .container__products .search i {
+    font-size: 0.8rem;
+    padding-left: 0.4rem;
+    cursor: pointer;
+}
+
 
 @media (min-width:767px) {
     header nav {
@@ -49,6 +89,25 @@ main .container__hero .hero .hero__title {
     main .container__hero .hero .hero__title {
         font-size: 1.3rem;
         padding: 1.5rem 0;
+    }
+
+    main section .container__products .container__search {
+        width: 93%;
+        margin: 0 auto;
+    }
+
+    main section .container__products .search {
+        margin-top: 1.4rem;
+        width: 13rem;
+    }
+
+
+    main section .container__products .search input {
+        font-size: 1rem;
+    }
+
+    main section .container__products .search i {
+        font-size: 1rem;
     }
 }
 
@@ -62,5 +121,9 @@ main .container__hero .hero .hero__title {
 
     main .container__hero .hero .hero__title {
         padding: 1.8rem 0;
+    }
+
+    main section .container__products .search {
+        width: 20rem;
     }
 }
