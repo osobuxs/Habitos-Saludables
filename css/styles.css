@@ -11,6 +11,13 @@ body {
     font-family: 'Montserrat', sans-serif;
 }
 
+h1,
+h2,
+h3,
+h4 {
+    color: #333333;
+}
+
 header {
     height: 4rem;
     background-color: #4CAF50;
@@ -49,7 +56,6 @@ main section .container__products {
 
 main section .container__products .products__title {
     font-weight: bold;
-    color: #333333;
 }
 
 
@@ -69,16 +75,90 @@ main section .container__products .search input {
     font-size: 0.8rem;
 }
 
-main section .container__products {
-    margin-bottom: 200rem;
-}
-
 main section .container__products .search i {
     font-size: 0.8rem;
     padding-left: 0.4rem;
     cursor: pointer;
 }
 
+main section .container__products .products {
+    width: 91.4%;
+    margin: 1.2rem auto 0;
+}
+
+main section .container__products .products .product {
+    width: 12rem;
+    height: 16.5rem;
+    background: #6CA058;
+    border-radius: .5rem;
+    box-shadow: 2px 2px 4px 2px rgba(0, 0, 0, 0.2);
+    position: relative;
+    margin-bottom: 1.2rem;
+}
+
+main section .container__products .products .product .badge {
+    position: absolute;
+    top: .7rem;
+    left: .7rem;
+    background: #2A6F0E;
+    padding: .4rem .7rem;
+    border-radius: 2rem;
+    font-size: 0.6rem;
+    font-weight: 400;
+}
+
+main section .container__products .products .product .product__img {
+    width: 8rem;
+    height: 4rem;
+}
+
+main section .container__products .products .product .product__img img {
+    margin-left: .7rem;
+}
+
+main section .container__products .products .product .product__features h4 {
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+main section .container__products .products .product .product__features i {
+    color: #DFDA64;
+}
+
+main section .container__products .products .product .product__info {
+    width: 80%;
+    font-size: 0.8rem;
+}
+
+main section .container__products .products .product .product__info .product__cart {
+    width: 2rem;
+    height: 2rem;
+    border: 2px solid #2A6F0E;
+    border-radius: 100%;
+    color: #2A6F0E;
+    transition: .3s;
+    cursor: pointer;
+}
+
+.product__cart:hover {
+    background-color: #2A6F0E;
+    border: 2px solid #fff;
+}
+
+.product__cart:hover i {
+    color: #FFF;
+}
+
+main section .container__products .products .product .product__info .product__price .price {
+    color: #333333;
+    font-weight: bold;
+}
+
+main section .container__products .products .product .product__info .product__price .discount {
+    color: #E6E6E6;
+    text-decoration: line-through;
+    opacity: .7;
+}
 
 @media (min-width:767px) {
     header nav {
@@ -92,12 +172,11 @@ main section .container__products .search i {
     }
 
     main section .container__products .container__search {
-        width: 93%;
-        margin: 0 auto;
+        width: 91.4%;
+        margin: 2rem auto 0;
     }
 
     main section .container__products .search {
-        margin-top: 1.4rem;
         width: 13rem;
     }
 
@@ -108,6 +187,15 @@ main section .container__products .search i {
 
     main section .container__products .search i {
         font-size: 1rem;
+    }
+
+    main section .container__products .products {
+        margin-top: 1.5rem;
+    }
+
+    main section .container__products .products .product {
+        width: 13rem;
+        margin-bottom: 2rem;
     }
 }
 
@@ -125,5 +213,58 @@ main section .container__products .search i {
 
     main section .container__products .search {
         width: 20rem;
+    }
+
+    main section .container__products .products {
+        width: 95%;
+        margin: 1.5rem auto 0;
+    }
+
+    main section .container__products .container__search {
+        width: 95%;
+        margin: 1.5rem auto 0;
+    }
+
+    main section .container__products .products .product {
+        width: 18.75rem;
+        height: 25rem;
+        margin-bottom: 1.5rem;
+    }
+
+    main section .container__products .products .product .badge {
+        top: 1.3rem;
+        left: 1.8rem;
+        padding: .6rem 1.2rem;
+        font-size: 0.8rem;
+    }
+
+    main section .container__products .products .product .product__img {
+        width: 10rem;
+        height: 6rem;
+    }
+
+    main section .container__products .products .product .product__img img {
+        margin: 3rem 0;
+    }
+
+    main section .container__products .products .product .product__features {
+        margin-top: 2rem;
+    }
+
+    main section .container__products .products .product .product__features h4 {
+        font-size: 1.4rem;
+    }
+
+    main section .container__products .products .product .product__features i {
+        font-size: 1.4rem;
+    }
+
+    main section .container__products .products .product .product__info {
+        font-size: 1.1rem;
+    }
+
+    main section .container__products .products .product .product__info .product__cart {
+        width: 3rem;
+        height: 3rem;
     }
 }
