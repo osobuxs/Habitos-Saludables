@@ -1,0 +1,129 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #D0E9C6;
+    font-family: 'Montserrat', sans-serif;
+}
+
+header {
+    height: 4rem;
+    background-color: #4CAF50;
+}
+
+header nav {
+    padding: 0 1rem;
+    background-color: #4CAF50;
+}
+
+header nav a {
+    font-size: 1.2rem;
+    color: #9BED9F;
+    text-decoration: none;
+}
+
+main .container__hero {
+    min-height: 20rem;
+    background-image: linear-gradient(rgba(5, 7, 12, .75), rgba(5, 7, 12, .75)),
+        url("../img/header.jpg");
+    background-size: cover;
+}
+
+
+
+main .container__hero .hero .hero__title {
+    width: 70%;
+    padding: 1.1rem;
+    font-size: 1rem;
+    color: #A6FFA9;
+}
+
+main section .container__products {
+    margin-top: 2rem;
+}
+
+main section .container__products .products__title {
+    font-weight: bold;
+    color: #333333;
+}
+
+
+main section .container__products .search {
+    margin-top: 1rem;
+    width: 10rem;
+    border-bottom: 3px solid #9BED9F;
+    padding-bottom: 0.2rem;
+}
+
+
+main section .container__products .search input {
+    width: 100%;
+    background-color: transparent;
+    border: 0;
+    outline: none;
+    font-size: 0.8rem;
+}
+
+main section .container__products {
+    margin-bottom: 200rem;
+}
+
+main section .container__products .search i {
+    font-size: 0.8rem;
+    padding-left: 0.4rem;
+    cursor: pointer;
+}
+
+
+@media (min-width:767px) {
+    header nav {
+        padding: 0 2rem;
+        background-color: #4CAF50;
+    }
+
+    main .container__hero .hero .hero__title {
+        font-size: 1.3rem;
+        padding: 1.5rem 0;
+    }
+
+    main section .container__products .container__search {
+        width: 93%;
+        margin: 0 auto;
+    }
+
+    main section .container__products .search {
+        margin-top: 1.4rem;
+        width: 13rem;
+    }
+
+
+    main section .container__products .search input {
+        font-size: 1rem;
+    }
+
+    main section .container__products .search i {
+        font-size: 1rem;
+    }
+}
+
+@media (min-width:990px) {
+    main .container__hero {
+        height: 28rem;
+        background-attachment: fixed;
+        background-position: bottom;
+        background-repeat: no-repeat;
+    }
+
+    main .container__hero .hero .hero__title {
+        padding: 1.8rem 0;
+    }
+
+    main section .container__products .search {
+        width: 20rem;
+    }
+}
