@@ -11,6 +11,13 @@ body {
     font-family: 'Montserrat', sans-serif;
 }
 
+h1,
+h2,
+h3,
+h4 {
+    color: #333333;
+}
+
 header {
     height: 4rem;
     background-color: #4CAF50;
@@ -21,23 +28,135 @@ header nav {
     background-color: #4CAF50;
 }
 
-header nav h1 {
+header nav a {
     font-size: 1.2rem;
     color: #9BED9F;
+    text-decoration: none;
 }
 
 main .container__hero {
-    min-height: 20rem;
+    min-height: 26rem;
     background-image: linear-gradient(rgba(5, 7, 12, .75), rgba(5, 7, 12, .75)),
         url("../img/header.jpg");
+    background-attachment: fixed;
+    background-position: bottom;
+    background-repeat: no-repeat;
     background-size: cover;
 }
 
+
+
 main .container__hero .hero .hero__title {
     width: 70%;
-    padding: 1rem;
+    padding: 1.1rem;
     font-size: 1rem;
     color: #A6FFA9;
+}
+
+main section .container__products {
+    margin-top: 2rem;
+}
+
+main section .container__products .products__title {
+    font-weight: bold;
+}
+
+
+main section .container__products .search {
+    margin-top: 1rem;
+    width: 12rem;
+    border-bottom: 3px solid #9BED9F;
+    padding-bottom: 0.2rem;
+}
+
+
+main section .container__products .search input {
+    width: 100%;
+    background-color: transparent;
+    border: 0;
+    outline: none;
+    font-size: 0.8rem;
+}
+
+main section .container__products .search i {
+    font-size: 0.8rem;
+    padding-left: 0.4rem;
+    cursor: pointer;
+}
+
+main section .container__products .products {
+    width: 91.4%;
+    margin: 1.2rem auto 0;
+}
+
+main section .container__products .products .product {
+    width: 12rem;
+    height: 16.5rem;
+    background: #6CA058;
+    border-radius: .5rem;
+    box-shadow: 2px 2px 4px 2px rgba(0, 0, 0, 0.2);
+    position: relative;
+    margin-bottom: 1.2rem;
+}
+
+main section .container__products .products .product .badge {
+    position: absolute;
+    top: .7rem;
+    left: .7rem;
+    background: #2A6F0E;
+    padding: .4rem .7rem;
+    border-radius: 2rem;
+    font-size: 0.6rem;
+    font-weight: 400;
+}
+
+main section .container__products .products .product .product__img {
+    width: 8rem;
+    height: 4rem;
+}
+
+main section .container__products .products .product .product__features h4 {
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+main section .container__products .products .product .product__features i {
+    color: #DFDA64;
+}
+
+main section .container__products .products .product .product__info {
+    width: 80%;
+    font-size: 0.8rem;
+}
+
+main section .container__products .products .product .product__info .product__cart {
+    width: 2rem;
+    height: 2rem;
+    border: 2px solid #2A6F0E;
+    border-radius: 100%;
+    color: #2A6F0E;
+    transition: .3s;
+    cursor: pointer;
+}
+
+.product__cart:hover {
+    background-color: #2A6F0E;
+    border: 2px solid #fff;
+}
+
+.product__cart:hover i {
+    color: #FFF;
+}
+
+main section .container__products .products .product .product__info .product__price .price {
+    color: #333333;
+    font-weight: bold;
+}
+
+main section .container__products .products .product .product__info .product__price .discount {
+    color: #E6E6E6;
+    text-decoration: line-through;
+    opacity: .7;
 }
 
 @media (min-width:767px) {
@@ -46,21 +165,107 @@ main .container__hero .hero .hero__title {
         background-color: #4CAF50;
     }
 
+    main .container__hero {
+        height: 40rem
+    }
+
     main .container__hero .hero .hero__title {
         font-size: 1.3rem;
         padding: 1.5rem 0;
+    }
+
+    main section .container__products .container__search {
+        width: 91.4%;
+        margin: 2rem auto 0;
+    }
+
+    main section .container__products .search {
+        width: 13rem;
+    }
+
+
+    main section .container__products .search input {
+        font-size: 1rem;
+    }
+
+    main section .container__products .search i {
+        font-size: 1rem;
+    }
+
+    main section .container__products .products {
+        margin-top: 1.5rem;
+    }
+
+    main section .container__products .products .product {
+        width: 13rem;
+        margin-bottom: 2rem;
     }
 }
 
 @media (min-width:990px) {
     main .container__hero {
-        height: 28rem;
-        background-attachment: fixed;
-        background-position: bottom;
-        background-repeat: no-repeat;
+        height: 37rem;
+        background-position: 50%;
     }
 
     main .container__hero .hero .hero__title {
         padding: 1.8rem 0;
+    }
+
+    main section .container__products .search {
+        width: 18.75rem;
+    }
+
+    main section .container__products .products {
+        width: 95%;
+        margin: 1.5rem auto 0;
+    }
+
+    main section .container__products .container__search {
+        width: 95%;
+        margin: 1.5rem auto 0;
+    }
+
+    main section .container__products .products .product {
+        width: 18.75rem;
+        height: 25rem;
+        margin-bottom: 1.5rem;
+    }
+
+    main section .container__products .products .product .badge {
+        top: 1.3rem;
+        left: 1.8rem;
+        padding: .6rem 1.2rem;
+        font-size: 0.8rem;
+    }
+
+    main section .container__products .products .product .product__img {
+        width: 10rem;
+        height: 6rem;
+    }
+
+    main section .container__products .products .product .product__img img {
+        margin: 3rem 0;
+    }
+
+    main section .container__products .products .product .product__features {
+        margin-top: 2rem;
+    }
+
+    main section .container__products .products .product .product__features h4 {
+        font-size: 1.4rem;
+    }
+
+    main section .container__products .products .product .product__features i {
+        font-size: 1.4rem;
+    }
+
+    main section .container__products .products .product .product__info {
+        font-size: 1.1rem;
+    }
+
+    main section .container__products .products .product .product__info .product__cart {
+        width: 3rem;
+        height: 3rem;
     }
 }
