@@ -61,7 +61,7 @@ main section .container__products .products__title {
 
 main section .container__products .search {
     margin-top: 1rem;
-    width: 10rem;
+    width: 12rem;
     border-bottom: 3px solid #9BED9F;
     padding-bottom: 0.2rem;
 }
@@ -110,10 +110,6 @@ main section .container__products .products .product .badge {
 main section .container__products .products .product .product__img {
     width: 8rem;
     height: 4rem;
-}
-
-main section .container__products .products .product .product__img img {
-    margin-left: .7rem;
 }
 
 main section .container__products .products .product .product__features h4 {
@@ -212,7 +208,7 @@ main section .container__products .products .product .product__info .product__pr
     }
 
     main section .container__products .search {
-        width: 20rem;
+        width: 18.75rem;
     }
 
     main section .container__products .products {
