@@ -35,9 +35,12 @@ header nav a {
 }
 
 main .container__hero {
-    min-height: 20rem;
+    min-height: 26rem;
     background-image: linear-gradient(rgba(5, 7, 12, .75), rgba(5, 7, 12, .75)),
         url("../img/header.jpg");
+    background-attachment: fixed;
+    background-position: bottom;
+    background-repeat: no-repeat;
     background-size: cover;
 }
 
@@ -162,6 +165,10 @@ main section .container__products .products .product .product__info .product__pr
         background-color: #4CAF50;
     }
 
+    main .container__hero {
+        height: 40rem
+    }
+
     main .container__hero .hero .hero__title {
         font-size: 1.3rem;
         padding: 1.5rem 0;
@@ -197,10 +204,8 @@ main section .container__products .products .product .product__info .product__pr
 
 @media (min-width:990px) {
     main .container__hero {
-        height: 28rem;
-        background-attachment: fixed;
-        background-position: bottom;
-        background-repeat: no-repeat;
+        height: 37rem;
+        background-position: 50%;
     }
 
     main .container__hero .hero .hero__title {
