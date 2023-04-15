@@ -159,6 +159,16 @@ main section .container__products .products .product .product__info .product__pr
     opacity: .7;
 }
 
+footer {
+    height: 4rem;
+    background-color: #4CAF50;
+}
+
+footer h5 {
+    font-size: 1.2rem;
+    color: #9BED9F;
+}
+
 @media (min-width:767px) {
     header nav {
         padding: 0 2rem;
