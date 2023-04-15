@@ -74,6 +74,9 @@ main section .container__products {
 main section .container__products .products__title {
   font-weight: bold;
 }
+main section .container__products .products__description {
+  text-align: center;
+}
 
 main section .container__products .search {
   margin-top: 1rem;
@@ -355,5 +358,9 @@ footer h5 {
   main .gallery_container .gallery {
     grid-template-rows: repeat(2, 18rem);
     margin-bottom: 1.5rem;
+  }
+  main section .container__products .products__description {
+    text-align: center;
+    font-size: 30px;
   }
 }

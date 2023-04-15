@@ -10,6 +10,11 @@
       integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ"
       crossorigin="anonymous"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.6.1/font/bootstrap-icons.css"
+    />
+
     <link rel="stylesheet" href="../css/styles.css" />
     <title>Document</title>
   </head>
@@ -30,10 +35,139 @@
         </article>
       </section>
       <section>
-        <article>
+        <article
+          class="container__products d-flex flex-column align-items-center"
+        >
           <h2 class="products__title text-center">
             Ejercicios efectivos y fáciles de hacer sin salir de casa
           </h2>
+          <div class="container">
+            <div class="row">
+              <div class="col-sm-12">
+                <img
+                  src="../img/gallery3.jpg"
+                  class="mx-auto img-fluid"
+                  alt="Descripción de la imagen"
+                />
+              </div>
+            </div>
+          </div>
+          <p class="products__description text-center mx-4 my-2">
+            Olvídate de las excusas para no hacer ejercicio. Conoce los mejores
+            ejercicios para tonificar tu cuerpo en la comodidad de tu hogar, sin
+            necesidad de equipamiento costoso ni de ir al gimnasio. Mejora tu
+            salud física y mental con una rutina de ejercicio diaria.
+          </p>
+        </article>
+      </section>
+      <section>
+        <article
+          class="container__products d-flex flex-column align-items-center"
+        >
+          <h2 class="products__title text-center">Testimonios</h2>
+          <div class="d-flex align-items-center justify-content-center">
+            <h4 class="fs-3 text-center">Comparte tu experiencia:</h4>
+            <button
+              type="button"
+              class="btn"
+              data-toggle="modal"
+              data-target="#myModal"
+            >
+              <div
+                class="modal fade"
+                id="myModal"
+                tabindex="-1"
+                role="dialog"
+                aria-labelledby="myModalLabel"
+                aria-hidden="true"
+              >
+                <div class="modal-dialog" role="document">
+                  <div class="modal-content">
+                    <form id="testimonial-form">
+                      <div class="modal-header">
+                        <h5 class="modal-title" id="myModalLabel">
+                          Agregar testimonio
+                        </h5>
+                        <button
+                          type="button"
+                          class="close"
+                          data-dismiss="modal"
+                          aria-label="Close"
+                        >
+                          <span aria-hidden="true">&times;</span>
+                        </button>
+                      </div>
+                      <div class="modal-body">
+                        <div class="form-group">
+                          <label for="name">Nombre</label>
+                          <input
+                            type="text"
+                            class="form-control"
+                            id="name"
+                            name="name"
+                            placeholder="Ingresa tu nombre"
+                            required
+                            minlength="3"
+                            maxlength="100"
+                          />
+                        </div>
+                        <div class="form-group">
+                          <label for="occupation">Ocupación</label>
+                          <input
+                            type="text"
+                            class="form-control"
+                            id="occupation"
+                            name="occupation"
+                            placeholder="Ingresa tu ocupación"
+                            required
+                            minlength="3"
+                            maxlength="100"
+                          />
+                        </div>
+                        <div class="form-group">
+                          <label for="photo">Foto</label>
+                          <input
+                            type="file"
+                            class="form-control-file"
+                            id="photo"
+                            name="photo"
+                            required
+                            accept="image/*"
+                          />
+                        </div>
+                        <div class="form-group">
+                          <label for="message">Mensaje</label>
+                          <textarea
+                            class="form-control"
+                            id="message"
+                            name="message"
+                            rows="4"
+                            placeholder="Ingresa tu mensaje"
+                            required
+                            minlength="3"
+                            maxlength="400"
+                          ></textarea>
+                        </div>
+                      </div>
+                      <div class="modal-footer">
+                        <button
+                          type="button"
+                          class="btn btn-secondary"
+                          data-dismiss="modal"
+                        >
+                          Cerrar
+                        </button>
+                        <button type="submit" class="btn btn-success">
+                          Enviar
+                        </button>
+                      </div>
+                    </form>
+                  </div>
+                </div>
+              </div>
+              <i class="bi bi-plus-circle fs-4"></i>
+            </button>
+          </div>
         </article>
       </section>
     </main>
