@@ -184,6 +184,16 @@ main .gallery_container .gallery .gallery-img-3 {
     grid-row: 1/3;
 }
 
+footer {
+    height: 4rem;
+    background-color: #4CAF50;
+}
+
+footer h5 {
+    font-size: 1.2rem;
+    color: #9BED9F;
+}
+
 @media (min-width:767px) {
     header nav {
         padding: 0 2rem;
