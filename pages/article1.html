@@ -70,103 +70,100 @@
             <button
               type="button"
               class="btn"
-              data-toggle="modal"
-              data-target="#myModal"
+              data-bs-toggle="modal"
+              data-bs-target="#exampleModal"
             >
-              <div
-                class="modal fade"
-                id="myModal"
-                tabindex="-1"
-                role="dialog"
-                aria-labelledby="myModalLabel"
-                aria-hidden="true"
-              >
-                <div class="modal-dialog" role="document">
-                  <div class="modal-content">
-                    <form id="testimonial-form">
-                      <div class="modal-header">
-                        <h5 class="modal-title" id="myModalLabel">
-                          Agregar testimonio
-                        </h5>
-                        <button
-                          type="button"
-                          class="close"
-                          data-dismiss="modal"
-                          aria-label="Close"
-                        >
-                          <span aria-hidden="true">&times;</span>
-                        </button>
-                      </div>
-                      <div class="modal-body">
-                        <div class="form-group">
-                          <label for="name">Nombre</label>
-                          <input
-                            type="text"
-                            class="form-control"
-                            id="name"
-                            name="name"
-                            placeholder="Ingresa tu nombre"
-                            required
-                            minlength="3"
-                            maxlength="100"
-                          />
-                        </div>
-                        <div class="form-group">
-                          <label for="occupation">Ocupación</label>
-                          <input
-                            type="text"
-                            class="form-control"
-                            id="occupation"
-                            name="occupation"
-                            placeholder="Ingresa tu ocupación"
-                            required
-                            minlength="3"
-                            maxlength="100"
-                          />
-                        </div>
-                        <div class="form-group">
-                          <label for="photo">Foto</label>
-                          <input
-                            type="file"
-                            class="form-control-file"
-                            id="photo"
-                            name="photo"
-                            required
-                            accept="image/*"
-                          />
-                        </div>
-                        <div class="form-group">
-                          <label for="message">Mensaje</label>
-                          <textarea
-                            class="form-control"
-                            id="message"
-                            name="message"
-                            rows="4"
-                            placeholder="Ingresa tu mensaje"
-                            required
-                            minlength="3"
-                            maxlength="400"
-                          ></textarea>
-                        </div>
-                      </div>
-                      <div class="modal-footer">
-                        <button
-                          type="button"
-                          class="btn btn-secondary"
-                          data-dismiss="modal"
-                        >
-                          Cerrar
-                        </button>
-                        <button type="submit" class="btn btn-success">
-                          Enviar
-                        </button>
-                      </div>
-                    </form>
-                  </div>
-                </div>
-              </div>
               <i class="bi bi-plus-circle fs-4"></i>
             </button>
+            <!-- Modal -->
+            <div
+              class="modal fade"
+              id="exampleModal"
+              tabindex="-1"
+              aria-label="Agregar Testimonio"
+              aria-hidden="true"
+            >
+              <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                  <form id="testimony-form" enctype="multipart/form-data">
+                    <div class="modal-header">
+                      <h5 class="modal-title" id="exampleModalLabel">
+                        Agregar Testimonio
+                      </h5>
+                      <button
+                        type="button"
+                        class="close"
+                        data-dismiss="modal"
+                        aria-label="Close"
+                      >
+                        <span aria-hidden="true">&times;</span>
+                      </button>
+                    </div>
+                    <div class="modal-body">
+                      <div class="form-group">
+                        <label for="name">Nombre*</label>
+                        <input
+                          type="text"
+                          class="form-control"
+                          id="name"
+                          name="name"
+                          required
+                          minlength="3"
+                          maxlength="100"
+                        />
+                      </div>
+                      <div class="form-group">
+                        <label for="occupation">Ocupación*</label>
+                        <input
+                          type="text"
+                          class="form-control"
+                          id="occupation"
+                          name="occupation"
+                          required
+                          minlength="3"
+                          maxlength="100"
+                        />
+                      </div>
+                      <div class="form-group">
+                        <label for="photo">Foto*</label>
+                        <input
+                          type="file"
+                          class="form-control-file"
+                          id="photo"
+                          name="photo"
+                          accept="image/*"
+                          required
+                        />
+                      </div>
+                      <div class="form-group">
+                        <label for="message">Mensaje*</label>
+                        <textarea
+                          class="form-control"
+                          id="message"
+                          name="message"
+                          rows="5"
+                          required
+                          minlength="3"
+                          maxlength="400"
+                        ></textarea>
+                      </div>
+                    </div>
+                    <div class="modal-footer">
+                      <button
+                        type="button"
+                        class="btn btn-secondary"
+                        data-dismiss="modal"
+                      >
+                        Cerrar
+                      </button>
+                      <button type="submit" class="btn btn-success">
+                        Enviar
+                      </button>
+                    </div>
+                  </form>
+                </div>
+              </div>
+            </div>
           </div>
         </article>
       </section>
@@ -177,5 +174,10 @@
       integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
       crossorigin="anonymous"
     ></script>
+    <!-- Incluye la biblioteca de JavaScript de jQuery -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+    <!-- Incluye la biblioteca de JavaScript de Bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
   </body>
 </html>
