@@ -227,6 +227,19 @@ footer h5 {
   font-size: 1.2rem;
   color: #9bed9f;
 }
+.avatar {
+  width: 40px;
+  height: 40px;
+  border: 2px solid #080808;
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+.avatar img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
 
 @media (min-width: 767px) {
   header nav {
