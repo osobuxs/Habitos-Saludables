@@ -67,98 +67,10 @@
           <h2 class="products__title text-center">Testimonios</h2>
           <div class="d-flex align-items-center justify-content-center">
             <h4 class="fs-3 text-center">Comparte tu experiencia:</h4>
-            <button
-              type="button"
-              class="btn"
-              data-bs-toggle="modal"
-              data-bs-target="#exampleModal"
-            >
-              <i class="bi bi-plus-circle fs-4"></i>
-            </button>
-            <!-- Modal -->
-            <div
-              class="modal fade"
-              id="exampleModal"
-              tabindex="-1"
-              aria-label="Agregar Testimonio"
-              aria-hidden="true"
-            >
-              <div class="modal-dialog" role="document">
-                <div class="modal-content">
-                  <form id="testimony-form" enctype="multipart/form-data">
-                    <div class="modal-header">
-                      <h5 class="modal-title" id="exampleModalLabel">
-                        Agregar Testimonio
-                      </h5>
-                    </div>
-                    <div class="modal-body">
-                      <div class="form-group">
-                        <label for="name">Nombre*</label>
-                        <input
-                          type="text"
-                          class="form-control"
-                          id="name"
-                          name="name"
-                          required
-                          minlength="3"
-                          maxlength="30"
-                        />
-                      </div>
-                      <div class="form-group">
-                        <label for="occupation">Ocupación*</label>
-                        <input
-                          type="text"
-                          class="form-control mb-2"
-                          id="occupation"
-                          name="occupation"
-                          required
-                          minlength="3"
-                          maxlength="30"
-                        />
-                      </div>
-                      <div class="form-group">
-                        <label for="photo">Foto*</label>
-                        <input
-                          type="file"
-                          class="form-control-file"
-                          id="photo"
-                          name="photo"
-                          accept="image/*"
-                          required
-                        />
-                      </div>
-                      <div class="form-group">
-                        <label for="message">Mensaje*</label>
-                        <textarea
-                          class="form-control"
-                          id="message"
-                          name="message"
-                          rows="5"
-                          required
-                          minlength="3"
-                          maxlength="400"
-                        ></textarea>
-                      </div>
-                    </div>
-                    <div class="modal-footer">
-                      <button
-                        type="button"
-                        class="btn btn-secondary"
-                        data-dismiss="modal"
-                      >
-                        Cerrar
-                      </button>
-                      <button type="submit" class="btn btn-success">
-                        Enviar
-                      </button>
-                    </div>
-                  </form>
-                </div>
-              </div>
-            </div>
+            <a href="#testimonios"><i class="bi bi-plus-circle fs-4"></i></a>
           </div>
         </article>
-        <article>
+        <section id="testimonios-comentarios">
           <div class="container my-2">
             <div class="row">
               <div class="col-md-12">
@@ -279,8 +191,64 @@
               </div>
             </div>
           </div>
-        </article>
+        </section>
       </section>
+      <div class="container my-4">
+        <form id="testimony-form">
+          <div class="form-group">
+            <label for="name">Nombre*</label>
+            <input
+              type="text"
+              class="form-control"
+              id="name"
+              name="name"
+              required
+              minlength="3"
+              maxlength="30"
+            />
+          </div>
+          <div class="form-group mt-3">
+            <label for="occupation">Ocupación*</label>
+            <input
+              type="text"
+              class="form-control mb-2"
+              id="occupation"
+              name="occupation"
+              required
+              minlength="3"
+              maxlength="30"
+            />
+          </div>
+          <div class="form-group mt-3">
+            <label for="photo">Foto*</label>
+            <input
+              type="file"
+              class="form-control-file"
+              id="photo"
+              name="photo"
+              accept="image/*"
+              required
+            />
+          </div>
+          <div class="form-group mt-3">
+            <label for="message">Mensaje*</label>
+            <textarea
+              class="form-control"
+              id="message"
+              name="message"
+              rows="5"
+              required
+              minlength="3"
+              maxlength="400"
+            ></textarea>
+          </div>
+          <div class="form-group mt-3">
+            <button type="submit" class="btn btn-primary" id="testimonios">
+              Enviar
+            </button>
+          </div>
+        </form>
+      </div>
     </main>
     <footer class="d-flex align-items-center justify-content-center">
       <nav>
