@@ -50,6 +50,7 @@ main .container__hero .hero .hero__title {
   font-size: 1rem;
   color: #a6ffa9;
 }
+
 body .container__article {
   min-height: 26rem;
   background-image: linear-gradient(rgba(5, 7, 12, 0.75), rgba(5, 7, 12, 0.75)),
@@ -74,6 +75,7 @@ main section .container__products {
 main section .container__products .products__title {
   font-weight: bold;
 }
+
 main section .container__products .products__description {
   text-align: center;
 }
@@ -144,13 +146,7 @@ main section .container__products .products .product .product__info {
   font-size: 0.8rem;
 }
 
-main
-  section
-  .container__products
-  .products
-  .product
-  .product__info
-  .product__cart {
+main section .container__products .products .product .product__info .product__cart {
   width: 2rem;
   height: 2rem;
   border: 2px solid #2a6f0e;
@@ -169,26 +165,12 @@ main
   color: #fff;
 }
 
-main
-  section
-  .container__products
-  .products
-  .product
-  .product__info
-  .product__price
-  .price {
+main section .container__products .products .product .product__info .product__price .price {
   color: #333333;
   font-weight: bold;
 }
 
-main
-  section
-  .container__products
-  .products
-  .product
-  .product__info
-  .product__price
-  .discount {
+main section .container__products .products .product .product__info .product__price .discount {
   color: #e6e6e6;
   text-decoration: line-through;
   opacity: 0.7;
@@ -227,6 +209,7 @@ footer h5 {
   font-size: 1.2rem;
   color: #9bed9f;
 }
+
 .avatar {
   width: 40px;
   height: 40px;
@@ -241,6 +224,11 @@ footer h5 {
   object-fit: cover;
 }
 
+
+main section .container_about_we h1 {
+  margin: 2rem 0;
+}
+
 @media (min-width: 767px) {
   header nav {
     padding: 0 2rem;
@@ -250,6 +238,7 @@ footer h5 {
   main .container__hero {
     height: 40rem;
   }
+
   main .container__article {
     height: 40rem;
   }
@@ -258,6 +247,7 @@ footer h5 {
     font-size: 1.3rem;
     padding: 1.5rem 0;
   }
+
   main .container__article .hero .hero__title {
     font-size: 1.3rem;
     padding: 1.5rem 0;
@@ -357,13 +347,7 @@ footer h5 {
     font-size: 1.1rem;
   }
 
-  main
-    section
-    .container__products
-    .products
-    .product
-    .product__info
-    .product__cart {
+  main section .container__products .products .product .product__info .product__cart {
     width: 3rem;
     height: 3rem;
   }
@@ -372,6 +356,7 @@ footer h5 {
     grid-template-rows: repeat(2, 18rem);
     margin-bottom: 1.5rem;
   }
+
   main section .container__products .products__description {
     text-align: center;
     font-size: 30px;
