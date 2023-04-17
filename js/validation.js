@@ -72,10 +72,10 @@ function validatePhoto() {
 function validateMessage() {
   if (message.value === "") {
     showError(message, "Por favor, ingrese su mensaje");
-  } else if (message.value.length < 3 || message.value.length > 30) {
+  } else if (message.value.length < 10 || message.value.length > 300) {
     showError(
       message,
-      "Por favor, ingrese un valor válido (entre 3 y 30 caracteres)"
+      "Por favor, ingrese un valor válido (entre 10 y 300 caracteres)"
     );
   } else {
     removeError(message);
