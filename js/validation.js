@@ -3,7 +3,7 @@ const name = document.querySelector("#name");
 const occupation = document.querySelector("#occupation");
 const photo = document.querySelector("#photo");
 const message = document.querySelector("#message");
-const submitButton = document.querySelector("#form-testimonios");
+const submitButton = document.querySelector("#form-testimonials");
 
 function showError(field, message) {
   if (!field.classList.contains("is-invalid")) {
