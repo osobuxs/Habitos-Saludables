@@ -21,7 +21,7 @@ Este es un proyecto de un blog de hábitos saludables, que tiene como objetivo m
 
 ## Instrucciones para visualizar el proyecto
 
-- El proyecto se encuentra deployado en Netlify. Para visualizarlo, se debe ingresar al siguiente enlace: <https://blog-habitos-saludables.netlify.app/>
+- El proyecto se encuentra deployado en Netlify. Para visualizarlo, se debe ingresar al siguiente enlace: <https://resilient-bonbon-b1706a.netlify.app//>
 
 - Para ver el código fuente del proyecto, se debe ingresar al siguiente repositorio de GitHub: <https://github.com/osobuxs/Habitos-Saludables>
 
