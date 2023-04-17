@@ -201,11 +201,25 @@
         <form id="testimony-form">
           <div class="form-group">
             <label for="name">Nombre*</label>
-            <input type="text" class="form-control" id="name" required />
+            <input
+              type="text"
+              class="form-control"
+              id="name"
+              minlength="3"
+              maxlength="30"
+              required
+            />
           </div>
           <div class="form-group mt-3">
             <label for="occupation">Ocupación*</label>
-            <input type="text" class="form-control" id="occupation" required />
+            <input
+              type="text"
+              class="form-control"
+              id="occupation"
+              minlength="3"
+              maxlength="30"
+              required
+            />
           </div>
           <div class="form-group mt-3">
             <label for="photo">Foto*</label>
@@ -223,6 +237,8 @@
               class="form-control"
               id="message"
               rows="5"
+              minlength="3"
+              maxlength="30"
               required
             ></textarea>
           </div>

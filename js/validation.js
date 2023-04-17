@@ -29,6 +29,11 @@ function removeError(field) {
 function validateName() {
   if (name.value === "") {
     showError(name, "Por favor, ingrese su nombre");
+  } else if (name.value.length < 3 || name.value.length > 30) {
+    showError(
+      name,
+      "Por favor, ingrese un valor válido (entre 3 y 30 caracteres)"
+    );
   } else {
     removeError(name);
   }
@@ -37,6 +42,11 @@ function validateName() {
 function validateOccupation() {
   if (occupation.value === "") {
     showError(occupation, "Por favor, ingrese su ocupación");
+  } else if (occupation.value.length < 3 || occupation.value.length > 30) {
+    showError(
+      occupation,
+      "Por favor, ingrese un valor válido (entre 3 y 30 caracteres)"
+    );
   } else {
     removeError(occupation);
   }
@@ -62,6 +72,11 @@ function validatePhoto() {
 function validateMessage() {
   if (message.value === "") {
     showError(message, "Por favor, ingrese su mensaje");
+  } else if (message.value.length < 3 || message.value.length > 30) {
+    showError(
+      message,
+      "Por favor, ingrese un valor válido (entre 3 y 30 caracteres)"
+    );
   } else {
     removeError(message);
   }
