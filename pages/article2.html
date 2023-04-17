@@ -60,6 +60,29 @@
           </p>
         </article>
       </section>
+      <!-- Agrega un elemento de modal -->
+      <div class="modal" tabindex="-1" role="dialog" id="myModal">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-body text-center">
+              <img
+                src="../img/publicidad1.jpg"
+                alt="Imagen de publicidad"
+                class="img-fluid"
+              />
+            </div>
+            <div class="modal-footer justify-content-center">
+              <button
+                type="button"
+                class="btn btn-secondary"
+                data-dismiss="modal"
+              >
+                Cerrar
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
     </main>
     <footer class="d-flex align-items-center justify-content-center">
       <nav>
@@ -76,5 +99,11 @@
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <!-- Incluye la biblioteca de JavaScript de Bootstrap -->
     <script src="../js/index.js"></script>
+    <!-- Agrega JavaScript para mostrar el modal después de 5 segundos -->
+    <script>
+      setTimeout(function () {
+        $("#myModal").modal("show");
+      }, 5000);
+    </script>
   </body>
 </html>
